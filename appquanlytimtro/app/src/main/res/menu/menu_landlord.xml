@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Tổng quan"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_manage_rooms"
+        android:title="Quản lý phòng"
+        android:icon="@drawable/ic_room" />
+    <item
+        android:id="@+id/nav_bookings"
+        android:title="Đặt phòng"
+        android:icon="@drawable/ic_booking" />
+    <item
+        android:id="@+id/nav_payments"
+        android:title="Thanh toán"
+        android:icon="@drawable/ic_payment" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_profile" />
+</menu>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyTimTro"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QuanLyTimTro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".rooms.RoomListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".rooms.RoomDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".rooms.RoomSearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".payments.PaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.example.appquanlytimtro" android:host="vnpay" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".payments.VNPayWebViewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".payments.PaymentSuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="localhost" android:pathPrefix="/payment/success" />
+                <data android:scheme="https" android:host="localhost" android:pathPrefix="/payment/success" />
+            </intent-filter>
+        </activity>
+            
+        <activity
+            android:name=".landlord.EditRoomActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".bookings.BookingListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".bookings.BookingDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".payments.PaymentListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".landlord.AddRoomActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".bookings.BookRoomActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+        <activity
+            android:name=".admin.AddEditUserActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuanLyTimTro" />
+            
+    </application>
+
+</manifest>

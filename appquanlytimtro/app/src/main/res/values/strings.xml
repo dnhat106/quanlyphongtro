@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appquanlytimtro</string>
+    <string name="invalid_input">Vui lòng nhập thông tin hợp lệ</string>
+    <string name="saved_successfully">Thực hiện thành công</string>
+    <string name="save_failed">Thao tác thất bại</string>
+    <string name="network_error">Lỗi kết nối. Vui lòng thử lại.</string>
+    <string name="load_failed">Tải dữ liệu thất bại</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="save">Lưu</string>
+</resources>
